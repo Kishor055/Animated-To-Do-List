@@ -45,17 +45,35 @@ This project focuses on **UI/UX design, smooth animations, and real-world backen
 ## 📁 Project Structure
 
 ```
-/todo-app
+ANIMATED-TO-DO-LIST/
 │
-├── frontend/
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
+├── client/
+│   └── src/
+│       ├── components/
+│       │   ├── CalendarView.jsx
+│       │   ├── Charts.jsx
+│       │   ├── Dashboard.jsx
+│       │   └── TodoApp.jsx
+│       ├── pages/
+│       │   └── Home.jsx
+│       ├── App.jsx
+│       ├── main.jsx
+│       └── styles.css
 │
-├── backend/
+├── server/
+│   ├── models/
+│   │   └── Todo.js
+│   ├── routes/
+│   │   ├── aiRoutes.js
+│   │   ├── analyticsRoutes.js
+│   │   ├── scheduleRoutes.js
+│   │   └── todoRoutes.js
 │   └── server.js
 │
+├── .env
 └── README.md
+```
+
 ```
 
 ---
