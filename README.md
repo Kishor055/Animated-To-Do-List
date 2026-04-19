@@ -145,7 +145,7 @@ index.html
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Kishor Kakde Patil**
 Full Stack Developer | UI/UX Enthusiast
 
 ---
