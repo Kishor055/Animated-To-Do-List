@@ -83,7 +83,7 @@ ANIMATED-TO-DO-LIST/
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/animated-todo-list.git
+git clone https://github.com/Kishor055/animated-todo-list.git
 ```
 
 ---
