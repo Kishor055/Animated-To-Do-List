@@ -1,0 +1,338 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #0b1220;
+  color: #ffffff;
+}
+
+/* =========================
+   APP WRAPPER
+========================= */
+
+.app-root {
+  min-height: 100vh;
+}
+
+/* =========================
+   HOME LAYOUT
+========================= */
+
+.home-container {
+  padding: 20px;
+}
+
+/* HEADER */
+
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.header p {
+  opacity: 0.7;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* =========================
+   GRID SYSTEM
+========================= */
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.grid-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* =========================
+   GLASS CARD SYSTEM
+========================= */
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  border-radius: 14px;
+  padding: 16px;
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(56, 189, 248, 0.5);
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.stat-box {
+  background: rgba(255,255,255,0.04);
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stat-box h3 {
+  color: #38bdf8;
+  font-size: 20px;
+}
+
+.stat-box p {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* Progress bar */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #38bdf8);
+  transition: width 0.4s ease;
+}
+
+.progress-text {
+  margin-top: 8px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* =========================
+   TODO APP
+========================= */
+
+.todo-app input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.07);
+  color: white;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.todo-input button {
+  background: #38bdf8;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.todo-input button:hover {
+  background: #0ea5e9;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.05);
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.todo-item:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+.todo-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.todo-text.done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #ef4444;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Priority badges */
+.badge {
+  font-size: 10px;
+  padding: 3px 7px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.HIGH { background: #ef4444; }
+.MEDIUM { background: #f97316; }
+.LOW { background: #22c55e; }
+
+/* =========================
+   AI CHAT
+========================= */
+
+.ai-chat-card {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
+
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 10px;
+}
+
+.chat-message {
+  padding: 8px 12px;
+  margin: 6px 0;
+  border-radius: 10px;
+  max-width: 80%;
+  font-size: 13px;
+}
+
+.chat-message.user {
+  background: #38bdf8;
+  color: black;
+  margin-left: auto;
+}
+
+.chat-message.ai {
+  background: rgba(255,255,255,0.08);
+}
+
+.chat-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255,255,255,0.07);
+  color: white;
+}
+
+.chat-input button {
+  background: #22c55e;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* =========================
+   CHARTS
+========================= */
+
+.chart-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* =========================
+   CALENDAR
+========================= */
+
+.calendar-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.react-calendar {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: white;
+}
+
+.react-calendar__tile {
+  color: white;
+  border-radius: 6px;
+}
+
+.react-calendar__tile--active {
+  background: #38bdf8 !important;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+  .grid-2,
+  .grid-main {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
